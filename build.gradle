@@ -1,0 +1,24 @@
+buildscript {
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.node", version: "latest.release"
+	}
+}
+
+apply plugin: "com.liferay.node"
+
+node {
+    nodeVersion = "10.15.3"
+    npmVersion = "6.4.1"
+}
+
+npmRunBuild {
+    outputs.upToDateWhen {
+        false
+    }
+}
