@@ -1,0 +1,16 @@
+{
+	"name": "Myreact",
+	"fields": {
+		"fruit": {
+			"type": "string",
+			"name": "Favourite fruit",
+			"description": "Choose the fruit you like the most",
+			"default": "orange",
+			"options": {
+				"orange": "An orange",
+				"pear": "A pear",
+				"apple": "An apple"
+			}
+		}
+	}
+}
